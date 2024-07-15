@@ -14,7 +14,7 @@ const Register = () => {
     if (!inputfullname || !inputemail || !inputpassword) {
       alert("kindly, input your details");
     } else {
-      console.log("you");
+      alert("login succesful");
     }
     SetInputfullname("");
     SetInputEmail("");

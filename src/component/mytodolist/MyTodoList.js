@@ -1,24 +1,13 @@
 import React from "react";
 import "../todo/todo.css";
 import { FaRegTrashAlt } from "react-icons/fa";
-import { act } from "react-dom/test-utils";
+// import { act } from "react-dom/test-utils";
 
 const MyTodoList = ({ items, deleteItem }) => {
   return (
     <div>
       {items.map((item) => {
         const { id, title, date, time } = item;
-
-        // let timestamp = item.date;
-        // console.log(timestamp);
-        // let dte = new Date(timestamp);
-        // // let day = dte.getDate();
-        // // let month = dte.getMonth() + 1;
-        // // let year = dte.getFullYear();
-        // let tim = dte.toDateString();
-        // // timestamp = dte;
-        // let formattedTime = `${tim}`;
-        // console.log(formattedTime);
 
         return (
           <div className="output" key={id}>
